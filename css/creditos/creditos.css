@@ -1,0 +1,18 @@
+.creditos-bg {
+  background-color: var(--cor-s3);
+}
+.creditos-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.creditos-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+.creditos-icons a {
+  width: 200px;
+  margin: 20px;
+}

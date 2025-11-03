@@ -1,0 +1,128 @@
+.main-bg {
+  background-color: var(--cor-s1);
+  box-shadow: inset 0 -100px var(--cor-1);
+}
+.main-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  padding-top: 25px;
+}
+.main-grid img {
+  border-radius: 20px;
+}
+.main-conteudo {
+  margin-right: 42px;
+}
+.main-titulo {
+  margin-top: 12px;
+}
+.main-texto-principal {
+  margin-top: 32px;
+}
+.detalhe {
+  position: absolute;
+  left: -60px;
+  top: -70px;
+}
+.main-conteudo img + a {
+  background-color: #80ff3c;
+  margin-top: 68px;
+  position: relative;
+}
+.main-conteudo img + a:hover {
+  background-color: #4fa122;
+}
+.main-conteudo a + a {
+  background-color: var(--cor-4);
+  margin-top: 50px;
+}
+.main-conteudo a + a:hover {
+  background-color: var(--cor-7);
+}
+.main-aviso {
+  margin-top: 60px;
+  position: relative;
+}
+.main-aviso::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--cor-s2);
+  top: -30px;
+}
+.imagem-mobile {
+  display: none;
+}
+@media (max-width: 1380px) {
+  .main-texto-principal {
+    margin-top: 15px;
+  }
+  .main-conteudo img + a {
+    margin-top: 38px;
+  }
+  .main-conteudo a + a {
+    background-color: var(--cor-4);
+    margin-top: 30px;
+  }
+  .main-aviso::before {
+    top: -15px;
+  }
+  .main-aviso {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1160px) {
+  .main-bg {
+    box-shadow: var(--cor-1);
+  }
+  .imagem-torneira {
+    width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .main-conteudo {
+    margin-right: 0px;
+  }
+  .main-titulo {
+    display: none;
+  }
+  .imagem-torneira {
+    display: none;
+  }
+  .imagem-mobile {
+    margin-top: 30px;
+    display: inline;
+  }
+  .main-conteudo img + a {
+    margin-top: 60px;
+  }
+  .main-bg {
+    box-shadow: inset 0 -360px var(--cor-1);
+  }
+  .main-conteudo a {
+    justify-self: center;
+  }
+  .main-aviso::before {
+    display: none;
+  }
+  .main-aviso {
+    color: var(--cor-s2);
+  }
+}
+@media (max-width: 400px) {
+  .main-superior a {
+    display: none;
+  }
+}

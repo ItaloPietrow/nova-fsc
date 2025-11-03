@@ -1,0 +1,48 @@
+.qualidade-bg {
+  background-color: var(--cor-p3);
+  padding-bottom: 30px;
+}
+.qualidade-titulo {
+  padding-top: 60px;
+}
+.qualidade p {
+  padding-top: 30px;
+}
+.qualidade-lista {
+  display: flex;
+  overflow-x: auto;
+  padding-top: 60px;
+}
+.qualidade-lista li {
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.qualidade a {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  justify-self: center;
+  background-color: var(--cor-s1);
+  color: var(--cor-1);
+}
+.qualidade a:hover {
+  background-color: var(--cor-s-4);
+}
+@media (max-width: 900px) {
+  .qualidade-titulo {
+    padding-top: 30px;
+  }
+}
+footer {
+  background-color: var(--cor-12);
+  color: rgb(0, 0, 255);
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--cor-1);
+  text-underline-offset: 5px;
+}
